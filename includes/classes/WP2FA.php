@@ -348,8 +348,8 @@ class WP2FA {
 	 * @param boolean $getDefaultValue return default value setting (ignore the stored ones)
 	 * @return mixed               Settings value or default value.
 	 */
-	public static function get_wp2fa_setting( $setting_name = '', $getDefaultOnEmpty = false, $getDefaultValue = false, string $role = 'global'  ) {
-
+	public static function get_wp2fa_setting( $setting_name = '', $getDefaultOnEmpty = false, $getDefaultValue = false, $role = 'global'  ) {
+		$role = is_null( $role ) ? 'global' : $role;
 		return self::get_wp2fa_setting_generic( WP_2FA_POLICY_SETTINGS_NAME, $setting_name, $getDefaultOnEmpty, $getDefaultValue, $role );
 	}
 
