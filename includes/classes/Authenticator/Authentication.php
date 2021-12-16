@@ -25,7 +25,7 @@ class Authentication {
 	const DEFAULT_CRYPTO              = 'sha1';
 	const DEFAULT_DIGIT_COUNT         = 6;
 	const DEFAULT_TIME_STEP_SEC       = 30;
-	const DEFAULT_TIME_STEP_ALLOWANCE = 4;
+	const DEFAULT_TIME_STEP_ALLOWANCE = 10;
 
 	/**
 	 * Holds the name of the meta key for the allowed login attempts
